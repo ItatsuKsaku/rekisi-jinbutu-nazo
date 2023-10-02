@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="歴史の人物の謎3.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>織田クイズ2</title>
+</head>
+<body class="body">
+    <div class="horror5">
+        <h1>織逕ｰ信髟ｷ</h1> 
+    </div>
+    <div>
+        <div class="horror1">
+            <div>
+                <h2>
+                    第一問　この中から適するものを一つ選べ
+                </h2>
+            </div>
+            <div>
+                <p>
+                    織田信長の首は今どこにあるか<br>
+                    ア、本能寺　イ、博物館　ウ、安土城　エ、不明
+                </p>
+            </div>
+            <div>
+                <h2>
+                    第二問　この中から適さないものを一つ選べ   
+                </h2>
+            </div>
+            <div>
+                <p>
+                    本能寺の変を起こした明智光秀の動機はなにか（なんといわれているか）<br>
+                    ア、織田信長に恨みを持っていたから　イ、天下を狙ってたから　ウ、信長の部下に対する態度が気に入らなかったから　エ、不明
+                </p>
+            </div>
+        </div>
+        <div class="horror2">
+            <div>
+                <h2>
+                    第三問　次の問題に答えてください
+                </h2>
+            </div>
+            <div>
+                <p>
+                織田信長の首は何の戦いでころがった遐ｴ鬚ｨ縺ｸ縺?∈??ｽ
+                </p>
+            </div>
+        </div>
+        <div class="horror3">
+            <div>
+                <h2>
+                    第四問　次の問題で適するものをjjaiu一つ選べei ??Χ縺?ｽ?ｽ翫?縺?∴?奇ｽ
+                </h2>
+            </div>
+            <div>
+                <p>
+                    ?抵ｽ医＄縺ゑｽ医?縺ゅｓ繝ｴ????難ｽ??縺医＞?ゑｽ厄ｽ茨ｽ?ｽ?↑?厄ｽ?ｽ茨ｼ倥≠?<br>
+                    ア、g荳荒byg縺?ｽ抵ｽ?ｋ繝ｴ縺茨ｽ抵ｽ厄ｽ呻ｼ假ｽ??縺ゑｽ悶↓縺?≧?厄ｽゑｽ??縺ゑｽゅΧ縺?ｼ倥?縺ｯ
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="horror4">
+                <p>回答欄</p>
+                <p>大問１</p>
+                <input id="toi1" class="border">
+                <button id="btn1" pys-onClick="input_btn1">押す</button>
+                <a href="#"><p id="output_test1"></p></a>
+                <p>回答欄</p>
+                <p>大問2</p>
+                <input id="toi2" class="border">
+                <button id="btn2" pys-onClick="input_btn2">押す</button>
+                <a href="#"><p id="output_test2"></p></a>
+                <p>回答欄</p>
+                <p>大問3</p>
+                <input id="toi3" class="border">
+                <button id="btn3" pys-onClick="input_btn3">押す</button>
+                <a href="#"><p id="output_test3"></p></a>
+                <p>回答欄</p>
+                <p>大問4</p>
+                <input id="toi4" class="border">
+                <button id="btn4" pys-onClick="input_btn4">押す</button>
+                <a href="#"><p id="output_test4"></p></a>
+                <a href="#"><p id="output_test4"></p></a>
+                <button id="btn5" pys-onClick="input_btn5">すべて答えたならばここを押せ</button>
+                <a href="歴史の人物の謎8 締め織田.html"><p id="output_test5"></p></a>
+            </div>
+                <py-script>
+                    def input_btn1(*ags,**kws):
+                        input_test_element=Element("toi1")
+                        input_word1=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if  input_word1=="エ":
+                            pyscript.write("output_test1","正解")
+                        else:
+                            pyscript.write("output_test1","不正解")
+                        input_test_element.clear
+
+                    def input_btn2(*ags,**kws):
+                        input_test_element=Element("toi2")
+                        input_word2=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word2=="ウ":
+                            pyscript.write("output_test2","正解")
+                        else:
+                            pyscript.write("output_test2","不正解")
+                        input_test_element.clear
+
+                    def input_btn3(*ags,**kws):
+                        input_test_element=Element("toi3")
+                        input_word3=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word3=="本能寺の変":
+                            pyscript.write("output_test3","正解")
+                        else:
+                            pyscript.write("output_test3","不正解")
+                        input_test_element.clear
+
+                    def input_btn4(*ags,**kws):
+                        input_test_element=Element("toi4")
+                        input_word4=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word4=="ア":
+                            pyscript.write("output_test4","正解")
+                        else:
+                            pyscript.write("output_test4","不正解")
+                        input_test_element.clear
+                    def input_btn5(*ags,**kws):
+                        input_test1_element=Element("toi1")
+                        input_word1=input_test1_element.value
+                        input_test2_element=Element("toi2")
+                        input_word2=input_test2_element.value
+                        input_test3_element=Element("toi3")
+                        input_word3=input_test3_element.value
+                        input_test4_element=Element("toi4")
+                        input_word4=input_test4_element.value
+                        <!-- 条件分岐 -->
+                        if input_word1=="エ" and input_word2=="ウ" and input_word3=="本能寺の変" and input_word4=="ア":
+                            pyscript.write("output_test5","<a href="歴史の人物の謎8 締め織田.html">ようこそ</a> ")
+                        else:
+                            pyscript.write("output_test5","不正解")
+                        input_test_element.clear
+
+            </py-script>
+        </div>
+
+    </div>
+</body>
+</html>

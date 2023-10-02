@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <P id="hogehoge"></P> -->
+    <input id="test" class="border">
+    <button id="btn" pys-onClick="input_btn">( ﾟДﾟ)</button>
+    <a href="#"><p id="output_test"></p></a>
+    <py-script>
+        def input_btn(*ags,**kws):
+            input_test_element=Element("test")
+            input_word=input_test_element.value
+            pyscript.write("output_test",input_word)
+            input_test_element.clear
+    </py-script>
+    
+
+</body>
+</html>

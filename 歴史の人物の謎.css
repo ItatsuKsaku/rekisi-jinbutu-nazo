@@ -1,0 +1,54 @@
+body{
+    color:#333333;
+}
+.home{
+    text-align: center;
+}
+.title-header{
+    text-align: center; 
+    padding-top: 100px auto;
+    padding-bottom: 10px; 
+    font-size: 25px;
+}
+.image{
+    width:200px ;height: 150px; 
+}   
+
+.make-border{
+    border: 2px solid #333333;
+    border-radius: 5px;
+    background-color: #fff3d9;
+    text-align:left;
+    margin-top:30px;
+}
+.make-border li{
+    margin: 20px auto;
+}
+.make-border ol{
+    color:#1071e5;
+}
+.make-border a{
+    color:#1071e5;
+}
+.Mystery-explanation{
+    font-size: 30px;
+}
+
+.home-images{
+    display: flex;
+    justify-content: space-around;
+}
+.home-images img{
+   border: 2px solid #333333;
+   border-radius: 5px;
+   width: 150px;
+   object-fit: cover;
+}
+.setsumei .title-header{
+    display: flex; 
+    justify-content: center; 
+}
+.back-link{
+    text-align: center;
+    margin-top:30px;
+}

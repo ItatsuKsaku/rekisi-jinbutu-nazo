@@ -1,0 +1,22 @@
+.horror1{
+    background-image:url(hora-.jpg) ;
+    color: hsl(0, 100%, 50%);
+}
+.horror2{
+    background-image:url(hora-tegata.jpg) ;
+    color: red;
+}
+.horror3{
+    background-image:url(20221212175308.jpg) ;
+    color: red;
+}
+/* .horror4{
+    background-image:url(赤169.jpg) ;
+    color: red;
+} */
+.body{
+    background-color: black;
+}
+.horror5{
+    color: red;
+}

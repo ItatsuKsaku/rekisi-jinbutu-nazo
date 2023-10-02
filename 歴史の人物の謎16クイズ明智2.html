@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="歴史の人物の謎3.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>明智クイズ2</title>
+</head>
+<body class="body">
+    <div class="horror5">
+        <h1>
+            明智蜈臥ｧ?
+        </h1>
+    </div>
+    <div>
+        <div class="horror1">
+            <div>
+                <h2>
+                   第一問 この中から適するものを一つ選べ
+                </h2>
+            </div>
+            <div>
+                <p>
+                    明智光秀の死んだ年は何年か<br>
+                    ア、1572年　イ、1578年　ウ、1582年　エ、1588年
+                </p>
+            </div>
+            <div>
+                <h2>
+                    第二問この中から適するものを一つ選べ
+                </h2>
+            </div>
+            <div>
+                <p>
+                    明智光秀の死因は何か<br>
+                    ア、本能寺の変によって死んだ　イ、織田信長の敵として狙われて死んだ<br>
+                    ウ、竹槍によって重傷を負いその場で自殺した　エ、寿命により死んだ
+
+                </p>
+            </div>
+        </div>
+        <div class="horror2">
+            <div>
+                <h2>
+                    第三問この中から適するものを一つ選べ
+                </h2>
+            </div>
+            <div>
+                <p>
+                  明智光秀が起こしたといわれる本能寺の変について適するものを答えよ<br>
+                  ア、本能寺の変は主犯や明智の生涯がはっきりしているので歴史的に変化があった事件といわれている<br>
+                  イ、本能寺の変は主犯や明智の生涯がはっきりしているのでなにか裏がある事件といわれている<br>
+                  ウ、本能寺の変は主犯や明智の生涯がはっきりしていないので歴史的に変化があった事件といわれている<br>
+                  エ、本能寺の変は主犯や明智の生涯がはっきりしていないのでなにか裏がある事件といわれている<br>
+                </p>
+            </div>
+        </div>
+        <div class="horror3">
+            <div>
+                <h2>
+                    第四問??ｽ抵ｽ趣この中ｽ吶ｌ?医ｊ??ｽから搾ｽ抵ｽ?ｽ悶正解と§繧奇ｽ?ｽ??書いｽ抵ｽ趣ｽ吶てるｌ?医ｊものを一??ｽ搾ｽ抵ｽつえら?ｽ悶§繧奇べｽ?ｽ
+                </h2>
+            </div>
+            <div>
+                <p>
+                   ア、?翫▲縺假ｽ?§縺｣縺倥∴縺?＞縺??奇ｽ具ｽ悶↑?具ｽ?ｽ薙§繧?Χ縺<br>
+                   イ、?茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ茨ｽ<br>
+                   ウ、?難ｽ奇ｽ難ｽ翫?縺?▲縺正解弱＞?偵℃??ｽ?ｽ?ｽ搾ｽ悶ｓ??Χ縺?ｊ縺趣ｽ?ｽ<br>
+                   エ、uhggeruahuhivosuhgrevsn<br>
+                </p>
+            </div>
+        </div>
+        <div class="horror4">
+            <P>回答欄</P>
+            <p>大問１</p>
+            <input id="toi1" class="border">
+            <button id="btn1" pys-onClick="input_btn1">押す</button>
+            <a href="#"><p id="output_test1"></p></a>
+            <p>大問2</p>
+            <input id="toi2" class="border">
+            <button id="btn2" pys-onClick="input_btn2">押す</button>
+            <a href="#"><p id="output_test2"></p></a>
+            <p>大問3</p>
+            <input id="toi3" class="border">
+            <button id="btn3" pys-onClick="input_btn3">押す</button>
+            <a href="#"><p id="output_test3"></p></a>
+            <p>大問4</p>
+            <input id="toi4" class="border">
+            <button id="btn4" pys-onClick="input_btn4">押す</button>
+            <a href="#"><p id="output_test4"></p></a>
+            <button id="btn4" pys-onClick="input_btn5">すべて答えたならばここを押せ</button>
+            <a href="歴史の人物の謎17締め.html"><p id="output_test5"></p></a>
+        </div>
+                <py-script>
+                    def input_btn1(*ags,**kws):
+                        input_test_element=Element("toi1")
+                        input_word1=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word1=="ウ":
+                            pyscript.write("output_test1","正解")
+                        else:
+                            pyscript.write("output_test1","不正解")
+                        input_test_element.clear
+
+                    def input_btn2(*ags,**kws):
+                        input_test_element=Element("toi2")
+                        input_word2=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word2=="ウ":
+                            pyscript.write("output_test2","正解")
+                        else:
+                            pyscript.write("output_test2","不正解")
+                        input_test_element.clear
+
+                    def input_btn3(*ags,**kws):
+                        input_test_element=Element("toi3")
+                        input_word3=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word3=="エ":
+                            pyscript.write("output_test3","正解")
+                        else:
+                            pyscript.write("output_test3","不正解")
+                        input_test_element.clear
+
+                    def input_btn4(*ags,**kws):
+                        input_test_element=Element("toi4")
+                        input_word4=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word4=="ウ":
+                            pyscript.write("output_test4","正解")
+                        else:
+                            pyscript.write("output_test4","不正解")
+                        input_test_element.clear
+
+                    def input_btn5(*ags,**kws):
+                        input_test_element=Element("toi1")
+                        input_word1=input_test_element.value
+                        input_test_element=Element("toi2")
+                        input_word2=input_test_element.value
+                        input_test_element=Element("toi3")
+                        input_word3=input_test_element.value
+                        input_test_element=Element("toi4")
+                        input_word4=input_test_element.value
+                        <!-- 条件分岐 -->
+                        if input_word1=="ウ" and input_word2=="ウ" and input_word3=="エ" and input_word4=="ウ":
+                            pyscript.write("output_test5"," <a href="歴史の人物の謎17締め.html">ようこそ</a>")
+                        else:
+                            pyscript.write("output_test5","不正解")
+                        input_test_element.clear
+                    
+                </py-script>
+        </div>
+</body>
+</html>
